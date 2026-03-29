@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máximo Piccoli — Creador de Contenido & Diseñador Visual</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo"><img src="assets/logo.png" alt="Máximo Piccoli" class="logo-img"></a>
+    <nav class="nav">
+      <a href="#work" class="nav-link" data-i18n="nav.work">Trabajo</a>
+      <a href="#reels" class="nav-link" data-i18n="nav.reels">Reels</a>
+      <a href="#videos" class="nav-link" data-i18n="nav.videos">Videos</a>
+      <a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a>
+      <a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a>
+      <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
+      <div class="lang-toggle">
+        <button class="lang-btn active">ES</button>
+        <button class="lang-btn">EN</button>
+      </div>
+      <a href="https://wa.me/543436989310" target="_blank" class="btn-primary-sm" data-i18n="nav.cta">Hablemos</a>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Menú">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero.badge">Disponible para nuevos proyectos</span>
+      </div>
+      <h1 class="hero-title" data-i18n="hero.title" data-i18n-html>Creador de Contenido<br>& Diseñador Visual</h1>
+      <p class="hero-sub" data-i18n="hero.sub" data-i18n-html>Edición de video, diseño de carruseles, branding e identidad visual<br>para marcas que quieren destacar. Desde Argentina, trabajando globalmente.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn-primary" data-i18n="hero.cta" data-i18n-html>Ver Mi Trabajo <i data-lucide="arrow-down"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients">
+    <span class="clients-label" data-i18n="clients.label">MARCAS QUE CONFIARON EN MÍ</span>
+    <div class="clients-row">
+      <span>NEGOCIO CAPITAL</span>
+      <span>RC DETAILING</span>
+      <span>INFUMATE</span>
+      <span>PAOLA BERMUDEZ</span>
+      <span>PODMAKERS</span>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <div>
+        <span class="section-label accent-indigo" data-i18n="work.label">TRABAJO SELECCIONADO</span>
+        <h2 class="section-title" data-i18n="work.title">Proyectos Recientes</h2>
+      </div>
+      <a href="#" class="view-all" data-i18n="work.viewAll" data-i18n-html>Ver Todos los Proyectos <i data-lucide="arrow-right"></i></a>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-img">
+          <img src="assets/negocio-capital.jpg" alt="Negocio Capital" loading="lazy">
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag" data-i18n="work.tag.social">Contenido Social</span>
+            <span class="tag" data-i18n="work.tag.carousels">Carruseles</span>
+          </div>
+          <h3>Negocio Capital</h3>
+          <p data-i18n="work.nc.desc">Diseño de carruseles, clipping y contenido visual para marca personal de emprendimiento y negocios.</p>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-img">
+          <img src="assets/rc-detailing.jpg" alt="RC Detailing" loading="lazy">
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Branding</span>
+            <span class="tag" data-i18n="work.tag.logo">Logo Design</span>
+          </div>
+          <h3>RC Detailing</h3>
+          <p data-i18n="work.rc.desc">Identidad visual completa para lavadero automotriz: logo, tipografía y sistema de marca.</p>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-img">
+          <img src="assets/niurkys-marcos.jpg" alt="Negocio Capital - Carrusel 2" loading="lazy">
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag" data-i18n="work.tag.social3">Contenido Social</span>
+            <span class="tag" data-i18n="work.tag.carousels2">Carruseles</span>
+          </div>
+          <h3>Negocio Capital</h3>
+          <p data-i18n="work.nc2.desc">Carruseles motivacionales y de marca personal con diseño editorial para redes sociales.</p>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-img">
+          <img src="assets/infumate.jpg" alt="Negocio Capital - Carrusel 3" loading="lazy">
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag" data-i18n="work.tag.social2">Contenido Social</span>
+            <span class="tag" data-i18n="work.tag.carousels3">Carruseles</span>
+          </div>
+          <h3>Negocio Capital</h3>
+          <p data-i18n="work.nc3.desc">Diseño de carrusel con enfoque lifestyle y aspiracional para marca de emprendimiento.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reels -->
+  <section class="reels" id="reels">
+    <div class="section-header">
+      <div>
+        <span class="section-label accent-coral" data-i18n="reels.label">CONTENIDO EN VIDEO</span>
+        <h2 class="section-title" data-i18n="reels.title">Reels & Video Edits</h2>
+      </div>
+      <button class="btn-expand" id="reels-toggle">
+        <i data-lucide="chevron-down"></i>
+        <span data-i18n="reels.more">Ver Más Reels</span>
+      </button>
+    </div>
+    <div class="reels-grid" id="reels-grid">
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="3OccDNmHNk8">
+          <img src="assets/reel-1-thumb.jpg" alt="REEL MARCOS 1 MIAMI" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Marcos</span>
+          </div>
+          <h3>REEL MARCOS 1 MIAMI</h3>
+        </div>
+      </article>
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="mCBHMxdKwF4" data-short="true">
+          <img src="assets/reel-2-thumb.jpg" alt="REEL 00 MAR2026 NIURKYS" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Niurkys</span>
+          </div>
+          <h3>REEL 00 MAR2026 NIURKYS</h3>
+        </div>
+      </article>
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="lJ9EX7L-e2Q" data-short="true">
+          <img src="assets/reel-3-thumb.jpg" alt="NIURKYS CREDITO 4 BEST VERSION" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Niurkys</span>
+          </div>
+          <h3>NIURKYS CREDITO 4 BEST VERSION</h3>
+        </div>
+      </article>
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="jSIH-ij9uKM" data-short="true">
+          <img src="assets/reel-4-thumb.jpg" alt="REEL 4 PAOLA bermudez" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Paola Bermudez</span>
+          </div>
+          <h3>REEL 4 PAOLA bermudez</h3>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="videos" id="videos">
+    <div class="section-header">
+      <div>
+        <span class="section-label accent-green" data-i18n="videos.label">PRODUCCIONES</span>
+        <h2 class="section-title" data-i18n="videos.title">Videos Completos</h2>
+      </div>
+    </div>
+    <div class="videos-grid">
+      <article class="video-card">
+        <div class="video-embed" data-video-id="8atxqhoMBoE">
+          <img src="assets/video-1-thumb.jpg" alt="Ivan sanchez FINAL CHEAP VSL" class="video-poster">
+          <div class="video-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="video-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+          </div>
+          <h3>Ivan sanchez FINAL CHEAP VSL</h3>
+        </div>
+      </article>
+      <article class="video-card">
+        <div class="video-embed" data-video-id="TH0KmafgBNU">
+          <img src="assets/video-2-thumb.jpg" alt="VSL LANDER pt 3 EPICO" class="video-poster">
+          <div class="video-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="video-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+          </div>
+          <h3>VSL LANDER pt 3 EPICO</h3>
+        </div>
+      </article>
+      <article class="video-card short">
+        <div class="video-embed" data-video-id="icZU261olqk" data-short="true">
+          <img src="assets/video-3-thumb.jpg" alt="REEL VOLKSWAGEN TCROSS" class="video-poster">
+          <div class="video-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="video-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube Short</span>
+          </div>
+          <h3>REEL VOLKSWAGEN TCROSS</h3>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="skills-header">
+      <span class="section-label accent-indigo" data-i18n="skills.label">MIS SERVICIOS</span>
+      <h2 class="section-title" data-i18n="skills.title">Lo Que Puedo Hacer Por Vos</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon icon-indigo"><i data-lucide="video"></i></div>
+        <h3 data-i18n="skills.editing.title">Edición de Video</h3>
+        <p data-i18n="skills.editing.desc">Reels, clipping, ads y contenido audiovisual para redes sociales. Edición dinámica que captura la atención y genera engagement.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon icon-green"><i data-lucide="layout-grid"></i></div>
+        <h3 data-i18n="skills.carousels.title">Diseño de Carruseles</h3>
+        <p data-i18n="skills.carousels.desc">Carruseles impactantes para Instagram y redes. Diseño visual que comunica tu mensaje de forma clara y atractiva.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon icon-coral"><i data-lucide="pen-tool"></i></div>
+        <h3 data-i18n="skills.branding.title">Branding & Identidad</h3>
+        <p data-i18n="skills.branding.desc">Logos, sistemas de marca e identidad visual completa. Diseño que refleja la esencia de tu negocio y te diferencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="assets/imagen-max.jpg" alt="Máximo Piccoli">
+    </div>
+    <div class="about-content">
+      <span class="section-label accent-indigo" data-i18n="about.label">SOBRE MÍ</span>
+      <h2 class="section-title" data-i18n="about.title" data-i18n-html>Apasionado por<br>el contenido visual</h2>
+      <div class="about-text">
+        <p data-i18n="about.p1">Soy creador de contenido y diseñador visual especializado en edición de video, diseño de carruseles para redes sociales, branding e identidad visual.</p>
+        <p data-i18n="about.p2">Trabajo con marcas personales, emprendedores y empresas que buscan comunicar su mensaje de forma impactante. Cada proyecto es una oportunidad para contar una historia que conecte con la audiencia.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label" data-i18n="about.stat1">Proyectos Completados</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">30+</span>
+          <span class="stat-label" data-i18n="about.stat2">Clientes Satisfechos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5+</span>
+          <span class="stat-label" data-i18n="about.stat3">Años de Experiencia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <h2 data-i18n="cta.title" data-i18n-html>Construyamos<br>Algo Grandioso</h2>
+    <p data-i18n="cta.sub" data-i18n-html>¿Tenés un proyecto en mente? Me encantaría escucharlo.<br>Creemos algo extraordinario juntos.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/543436989310" target="_blank" class="btn-gradient" data-i18n="cta.btn" data-i18n-html>Iniciar Proyecto <i data-lucide="arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <span class="logo"><img src="assets/logo.png" alt="Máximo Piccoli" class="logo-img"></span>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/horus.creatives" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.copy">© 2026 Máximo Piccoli. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script>
+    lucide.createIcons();
+
+    // ===== i18n =====
+    const translations = {
+      es: {
+        'nav.work': 'Trabajo',
+        'nav.reels': 'Reels',
+        'nav.videos': 'Videos',
+        'nav.skills': 'Habilidades',
+        'nav.about': 'Sobre mí',
+        'nav.contact': 'Contacto',
+        'nav.cta': 'Hablemos',
+        'hero.badge': 'Disponible para nuevos proyectos',
+        'hero.title': 'Creador de Contenido<br>& Diseñador Visual',
+        'hero.sub': 'Edición de video, diseño de carruseles, branding e identidad visual<br>para marcas que quieren destacar. Desde Argentina, trabajando globalmente.',
+        'hero.cta': 'Ver Mi Trabajo <i data-lucide="arrow-down"></i>',
+        'clients.label': 'MARCAS QUE CONFIARON EN MÍ',
+        'work.label': 'TRABAJO SELECCIONADO',
+        'work.title': 'Proyectos Recientes',
+        'work.viewAll': 'Ver Todos los Proyectos <i data-lucide="arrow-right"></i>',
+        'work.tag.social': 'Contenido Social',
+        'work.tag.carousels': 'Carruseles',
+        'work.tag.logo': 'Logo Design',
+        'work.tag.editing': 'Edición de Video',
+        'work.tag.social2': 'Contenido Social',
+        'work.tag.social3': 'Contenido Social',
+        'work.tag.carousels2': 'Carruseles',
+        'work.tag.carousels3': 'Carruseles',
+        'work.nc.desc': 'Diseño de carruseles, clipping y contenido visual para marca personal de emprendimiento y negocios.',
+        'work.rc.desc': 'Identidad visual completa para lavadero automotriz: logo, tipografía y sistema de marca.',
+        'work.nc2.desc': 'Carruseles motivacionales y de marca personal con diseño editorial para redes sociales.',
+        'work.nc3.desc': 'Diseño de carrusel con enfoque lifestyle y aspiracional para marca de emprendimiento.',
+        'reels.label': 'CONTENIDO EN VIDEO',
+        'reels.title': 'Reels & Video Edits',
+        'reels.more': 'Ver Más Reels',
+        'reels.less': 'Ver Menos',
+        'videos.label': 'PRODUCCIONES',
+        'videos.title': 'Videos Completos',
+        'skills.label': 'MIS SERVICIOS',
+        'skills.title': 'Lo Que Puedo Hacer Por Vos',
+        'skills.editing.title': 'Edición de Video',
+        'skills.editing.desc': 'Reels, clipping, ads y contenido audiovisual para redes sociales. Edición dinámica que captura la atención y genera engagement.',
+        'skills.carousels.title': 'Diseño de Carruseles',
+        'skills.carousels.desc': 'Carruseles impactantes para Instagram y redes. Diseño visual que comunica tu mensaje de forma clara y atractiva.',
+        'skills.branding.title': 'Branding & Identidad',
+        'skills.branding.desc': 'Logos, sistemas de marca e identidad visual completa. Diseño que refleja la esencia de tu negocio y te diferencia.',
+        'about.label': 'SOBRE MÍ',
+        'about.title': 'Apasionado por<br>el contenido visual',
+        'about.p1': 'Soy creador de contenido y diseñador visual especializado en edición de video, diseño de carruseles para redes sociales, branding e identidad visual.',
+        'about.p2': 'Trabajo con marcas personales, emprendedores y empresas que buscan comunicar su mensaje de forma impactante. Cada proyecto es una oportunidad para contar una historia que conecte con la audiencia.',
+        'about.stat1': 'Proyectos Completados',
+        'about.stat2': 'Clientes Satisfechos',
+        'about.stat3': 'Años de Experiencia',
+        'cta.title': 'Construyamos<br>Algo Grandioso',
+        'cta.sub': '¿Tenés un proyecto en mente? Me encantaría escucharlo.<br>Creemos algo extraordinario juntos.',
+        'cta.btn': 'Iniciar Proyecto <i data-lucide="arrow-right"></i>',
+        'footer.copy': '© 2026 Máximo Piccoli. Todos los derechos reservados.',
+        'footer.privacy': 'Privacidad',
+        'footer.terms': 'Términos'
+      },
+      en: {
+        'nav.work': 'Work',
+        'nav.reels': 'Reels',
+        'nav.videos': 'Videos',
+        'nav.skills': 'Skills',
+        'nav.about': 'About',
+        'nav.contact': 'Contact',
+        'nav.cta': "Let's Talk",
+        'hero.badge': 'Available for new projects',
+        'hero.title': 'Content Creator<br>& Visual Designer',
+        'hero.sub': 'Video editing, carousel design, branding & visual identity<br>for brands that want to stand out. From Argentina, working globally.',
+        'hero.cta': 'See My Work <i data-lucide="arrow-down"></i>',
+        'clients.label': 'BRANDS THAT TRUSTED ME',
+        'work.label': 'SELECTED WORK',
+        'work.title': 'Recent Projects',
+        'work.viewAll': 'View All Projects <i data-lucide="arrow-right"></i>',
+        'work.tag.social': 'Social Content',
+        'work.tag.carousels': 'Carousels',
+        'work.tag.logo': 'Logo Design',
+        'work.tag.editing': 'Video Editing',
+        'work.tag.social2': 'Social Content',
+        'work.tag.social3': 'Social Content',
+        'work.tag.carousels2': 'Carousels',
+        'work.tag.carousels3': 'Carousels',
+        'work.nc.desc': 'Carousel design, clipping & visual content for a personal brand focused on entrepreneurship and business.',
+        'work.rc.desc': 'Complete visual identity for an automotive detailing shop: logo, typography & brand system.',
+        'work.nc2.desc': 'Motivational and personal branding carousels with editorial design for social media.',
+        'work.nc3.desc': 'Lifestyle and aspirational carousel design for an entrepreneurship brand.',
+        'reels.label': 'VIDEO CONTENT',
+        'reels.title': 'Reels & Video Edits',
+        'reels.more': 'See More Reels',
+        'reels.less': 'See Less',
+        'videos.label': 'PRODUCTIONS',
+        'videos.title': 'Full Videos',
+        'skills.label': 'MY SERVICES',
+        'skills.title': 'What I Can Do For You',
+        'skills.editing.title': 'Video Editing',
+        'skills.editing.desc': 'Reels, clipping, ads & audiovisual content for social media. Dynamic editing that captures attention and drives engagement.',
+        'skills.carousels.title': 'Carousel Design',
+        'skills.carousels.desc': 'Stunning carousels for Instagram & social media. Visual design that communicates your message clearly and attractively.',
+        'skills.branding.title': 'Branding & Identity',
+        'skills.branding.desc': 'Logos, brand systems & complete visual identity. Design that reflects your business essence and sets you apart.',
+        'about.label': 'ABOUT ME',
+        'about.title': 'Passionate about<br>visual content',
+        'about.p1': "I'm a content creator and visual designer specialized in video editing, carousel design for social media, branding & visual identity.",
+        'about.p2': 'I work with personal brands, entrepreneurs & companies looking to communicate their message in an impactful way. Every project is an opportunity to tell a story that connects with the audience.',
+        'about.stat1': 'Projects Completed',
+        'about.stat2': 'Happy Clients',
+        'about.stat3': 'Years of Experience',
+        'cta.title': "Let's Build<br>Something Great",
+        'cta.sub': 'Have a project in mind? I\'d love to hear about it.<br>Let\'s create something extraordinary together.',
+        'cta.btn': 'Start Project <i data-lucide="arrow-right"></i>',
+        'footer.copy': '© 2026 Máximo Piccoli. All rights reserved.',
+        'footer.privacy': 'Privacy',
+        'footer.terms': 'Terms'
+      }
+    };
+
+    let currentLang = 'es';
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      const dict = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (dict[key]) {
+          if (el.hasAttribute('data-i18n-html')) {
+            el.innerHTML = dict[key];
+          } else {
+            el.textContent = dict[key];
+          }
+        }
+      });
+      // Re-init lucide icons after innerHTML changes
+      lucide.createIcons();
+      // Update lang toggle buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
+      });
+      // Update reels toggle text
+      const reelsGrid = document.getElementById('reels-grid');
+      const reelsToggleSpan = document.querySelector('#reels-toggle span');
+      if (reelsToggleSpan && reelsGrid) {
+        if (reelsGrid.classList.contains('expanded')) {
+          reelsToggleSpan.textContent = dict['reels.less'];
+        } else {
+          reelsToggleSpan.textContent = dict['reels.more'];
+        }
+      }
+    }
+
+    // Lang toggle
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLang(btn.textContent.toLowerCase());
+      });
+    });
+
+    // Reels expand toggle
+    const reelsToggle = document.getElementById('reels-toggle');
+    const reelsGrid = document.getElementById('reels-grid');
+    if (reelsToggle) {
+      reelsToggle.addEventListener('click', () => {
+        reelsGrid.classList.toggle('expanded');
+        const span = reelsToggle.querySelector('span');
+        if (reelsGrid.classList.contains('expanded')) {
+          span.textContent = translations[currentLang]['reels.less'];
+          reelsToggle.classList.add('rotated');
+        } else {
+          span.textContent = translations[currentLang]['reels.more'];
+          reelsToggle.classList.remove('rotated');
+        }
+      });
+    }
+
+    // Reel & Video click-to-play
+    document.querySelectorAll('.reel-embed[data-video-id], .video-embed[data-video-id]').forEach(embed => {
+      embed.addEventListener('click', () => {
+        if (embed.classList.contains('playing')) return;
+        const videoId = embed.dataset.videoId;
+        const isShort = embed.dataset.short === 'true';
+        const iframe = document.createElement('iframe');
+        if (isShort) {
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&rel=0&origin=${window.location.origin}`;
+        } else {
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&origin=${window.location.origin}`;
+        }
+        iframe.title = (embed.querySelector('.reel-poster') || embed.querySelector('.video-poster'))?.alt || '';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        embed.classList.add('playing');
+        embed.appendChild(iframe);
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        e.preventDefault();
+        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Mobile menu
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // Scroll to top
+    const scrollTopBtn = document.getElementById('scroll-top');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 600);
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

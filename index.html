@@ -63,6 +63,7 @@
       <span>CLUSTER</span>
       <span>IDEALMANAGEMENT</span>
       <span>21 STUDIOS</span>
+       <span>COACH BLUE</span>
     </div>
   </section>
 
@@ -154,6 +155,50 @@
           <p data-i18n="work.nc5.desc">Diseño de carrusel con estilo cinéfilo y mensajes directos sobre negocios y mentalidad.</p>
         </div>
       </article>
+     <!-- CLAUDEEEE -->
+
+<!-- NUEVO PROYECTO CON CARRUSEL 1 -->
+      <article class="project-card carousel-project-card" data-carousel='["assets/FOTO_1A.jpg","assets/FOTO_1B.jpg","assets/FOTO_1C.jpg", "assets/FOTO_1D.jpg"]'>
+        <div class="project-img carousel-wrapper">
+          <img src="assets/FOTO_1A.jpg" alt="Proyecto Carrusel 1" class="carousel-main-img" loading="lazy">
+          <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Contenido Social</span>
+            <span class="tag">Carrusel</span>
+            <span class="tag">CLICKEAR, CARRUSEL DESLIZABLE.</span>
+          </div>
+          <h3>Negocio Capital</h3>
+          <p>Carrusel rapido de última hora, de alto impacto visual. Con efectos de "Relight".</p>
+        </div>
+      </article>
+
+      <!-- NUEVO PROYECTO CON CARRUSEL 2 -->
+      <article class="project-card carousel-project-card" data-carousel='["assets/FOTO_2A.jpg","assets/FOTO_2B.jpg","assets/FOTO_2C.jpg", "assets/FOTO_2D.jpg"]'>
+        <div class="project-img carousel-wrapper">
+          <img src="assets/FOTO_2A.jpg" alt="Proyecto Carrusel 2" class="carousel-main-img" loading="lazy">
+          <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span class="tag">Branding</span>
+            <span class="tag">Carrusel</span>
+            <span class="tag">CLICKEAR, CARRUSEL DESLIZABLE.</span>
+          </div>
+          <h3>Coach Blue</h3>
+          <p>Carrusel + Storie slides para el famoso Coach Blue, de alto impacto visual. Con efectos de "Relight".</p>
+        </div>
+      </article>
+
+
+      <!-- CLAUDEEEE -->
+
+
     </div>
   </section>
 
@@ -250,8 +295,61 @@
           <h3>REEL VOLKSWAGEN TCROSS</h3>
         </div>
       </article>
-    </div>
+
+
+
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="Pxcq09kurw">
+          <img src="assets/reel-6-thumb.jpg" alt="TÍTULO REEL 6" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Niurkys</span>
+          </div>
+          <h3>TÍTULO REEL 6</h3>
+        </div>
+      </article>
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="ID_VIDEO_7">
+          <img src="assets/reel-7-thumb.jpg" alt="TÍTULO REEL 7" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Cliente 7</span>
+          </div>
+          <h3>TÍTULO REEL 7</h3>
+        </div>
+      </article>
+      <article class="reel-card">
+        <div class="reel-embed" data-video-id="ID_VIDEO_8">
+          <img src="assets/reel-8-thumb.jpg" alt="TÍTULO REEL 8" class="reel-poster">
+          <div class="reel-overlay"></div>
+          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
+        </div>
+        <div class="reel-info">
+          <div class="reel-meta">
+            <i data-lucide="youtube" class="meta-icon"></i>
+            <span class="meta-platform">YouTube</span>
+            <span class="meta-dot">·</span>
+            <span class="meta-client">Cliente 8</span>
+          </div>
+          <h3>TÍTULO REEL 8</h3>
+        </div>
+      </article>
+
+     </div>
   </section>
+
 
   <!-- Videos -->
   <section class="videos" id="videos">
@@ -626,6 +724,58 @@
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    
+
+
+
+
+
+
+
+
+
+    // Carruseles en tarjetas de proyecto
+    document.querySelectorAll('.carousel-project-card').forEach(card => {
+      const images = JSON.parse(card.dataset.carousel);
+      if (!images || images.length < 2) return;
+      let current = 0;
+      const img = card.querySelector('.carousel-main-img');
+      const dotsContainer = card.querySelector('.carousel-dots');
+
+      // Crear dots
+      images.forEach((_, i) => {
+        const dot = document.createElement('span');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      });
+
+      function goTo(index) {
+        current = (index + images.length) % images.length;
+        img.style.opacity = '0';
+        setTimeout(() => {
+          img.src = images[current];
+          img.style.opacity = '1';
+        }, 180);
+        card.querySelectorAll('.carousel-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
+
+      card.querySelector('.carousel-prev').addEventListener('click', e => {
+        e.stopPropagation();
+        goTo(current - 1);
+      });
+      card.querySelector('.carousel-next').addEventListener('click', e => {
+        e.stopPropagation();
+        goTo(current + 1);
+      });
+    });
+
+
+
+
   </script>
 </body>
 </html>

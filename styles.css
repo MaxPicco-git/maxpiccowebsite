@@ -1094,3 +1094,31 @@ img {
   background: #FAFAF9;
   transform: scale(1.3);
 }
+/* ===== Reel card vacío (placeholder) ===== */
+.reel-card--empty .reel-embed--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border: 2px dashed rgba(255,255,255,0.15);
+  border-radius: 12px;
+  min-height: 200px;
+  cursor: default;
+}
+
+.reel-empty-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.reel-empty-placeholder svg {
+  width: 36px;
+  height: 36px;
+  stroke: rgba(255,255,255,0.2);
+}

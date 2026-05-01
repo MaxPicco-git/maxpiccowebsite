@@ -1,575 +1,619 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Máximo Piccoli — Creador de Contenido & Diseñador Visual</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Máximo Piccoli — Creador de Contenido &amp; Diseñador Visual</title>
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <a href="#" class="logo"><img src="assets/logo.png" alt="Máximo Piccoli" class="logo-img"></a>
-    <nav class="nav">
-      <a href="#work" class="nav-link" data-i18n="nav.work">Trabajo</a>
-      <a href="#reels" class="nav-link" data-i18n="nav.reels">Reels</a>
-      <a href="#videos" class="nav-link" data-i18n="nav.videos">Videos</a>
-      <a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a>
-      <a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a>
-      <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
-      <div class="lang-toggle">
-        <button class="lang-btn active">ES</button>
-        <button class="lang-btn">EN</button>
-      </div>
-      <a href="https://wa.me/543436989310" target="_blank" class="btn-primary-sm" data-i18n="nav.cta">Hablemos</a>
-    </nav>
-    <button class="mobile-menu-btn" aria-label="Menú">
-      <i data-lucide="menu"></i>
-    </button>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="badge">
-        <span class="badge-dot"></span>
-        <span data-i18n="hero.badge">Disponible para nuevos proyectos</span>
-      </div>
-      <h1 class="hero-title" data-i18n="hero.title" data-i18n-html>Creador de Contenido<br>& Diseñador Visual</h1>
-      <p class="hero-sub" data-i18n="hero.sub" data-i18n-html>Edición de video, diseño de carruseles, branding e identidad visual<br>para marcas que quieren destacar. Desde Argentina, trabajando globalmente.</p>
-      <div class="hero-ctas">
-        <a href="#work" class="btn-primary" data-i18n="hero.cta" data-i18n-html>Ver Mi Trabajo <i data-lucide="arrow-down"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clients -->
-  <section class="clients">
-    <span class="clients-label" data-i18n="clients.label">MARCAS QUE CONFIARON EN MÍ DISEÑO</span>
-    <div class="clients-row">
-      <span>NEGOCIO CAPITAL</span>
-      <span>RC DETAILING</span>
-      <span>INFUMATE</span>
-      <span>PAOLA BERMUDEZ</span>
-      <span>PODMAKERS</span>
-      <span>VOLKSWAGEN</span>
-      <span>CLUSTER</span>
-      <span>IDEALMANAGEMENT</span>
-      <span>21 STUDIOS</span>
-       <span>COACH BLUE</span>
-    </div>
-  </section>
-
-  <!-- Work -->
-  <section class="work" id="work">
-    <div class="section-header">
-      <div>
-        <span class="section-label accent-indigo" data-i18n="work.label">TRABAJO SELECCIONADO</span>
-        <h2 class="section-title" data-i18n="work.title">Proyectos Recientes</h2>
-      </div>
-      <a href="#" class="view-all" data-i18n="work.viewAll" data-i18n-html>Ver Todos los Proyectos <i data-lucide="arrow-right"></i></a>
-    </div>
-    <div class="projects-grid">
-      <article class="project-card">
-        <div class="project-img">
-          <img src="assets/negocio-capital.jpg" alt="Negocio Capital" loading="lazy">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag" data-i18n="work.tag.social">Contenido Social</span>
-            <span class="tag" data-i18n="work.tag.carousels">Carruseles</span>
-          </div>
-          <h3>Negocio Capital</h3>
-          <p data-i18n="work.nc.desc">Diseño de carruseles, clipping y contenido visual para marca personal de emprendimiento y negocios.</p>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-img">
-          <img src="assets/rc-detailing.jpg" alt="RC Detailing" loading="lazy">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag">Branding</span>
-            <span class="tag" data-i18n="work.tag.logo">Logo Design</span>
-          </div>
-          <h3>RC Detailing</h3>
-          <p data-i18n="work.rc.desc">Identidad visual completa para lavadero automotriz: logo, tipografía y sistema de marca.</p>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-img">
-          <img src="assets/niurkys-marcos.jpg" alt="Negocio Capital - Carrusel 2" loading="lazy">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag" data-i18n="work.tag.social3">Contenido Social</span>
-            <span class="tag" data-i18n="work.tag.carousels2">Carruseles</span>
-          </div>
-          <h3>Negocio Capital</h3>
-          <p data-i18n="work.nc2.desc">Carruseles motivacionales y de marca personal con diseño editorial para redes sociales.</p>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-img">
-          <img src="assets/infumate.jpg" alt="Negocio Capital - Carrusel 3" loading="lazy">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag" data-i18n="work.tag.social2">Contenido Social</span>
-            <span class="tag" data-i18n="work.tag.carousels3">Carruseles</span>
-          </div>
-          <h3>Negocio Capital</h3>
-          <p data-i18n="work.nc3.desc">Diseño de carrusel con enfoque lifestyle y aspiracional para marca de emprendimiento.</p>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-img">
-          <img src="assets/slide3.jpg" alt="Negocio Capital - Carrusel 4" loading="lazy">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag" data-i18n="work.tag.social4">Contenido Social</span>
-            <span class="tag" data-i18n="work.tag.carousels4">Carruseles</span>
-          </div>
-          <h3>Negocio Capital</h3>
-          <p data-i18n="work.nc4.desc">Carrusel con frases de impacto y estética cinematográfica para emprendedores.</p>
-        </div>
-      </article>
-      <article class="project-card">
-        <div class="project-img">
-          <img src="assets/slide4.jpg" alt="Negocio Capital - Carrusel 5" loading="lazy">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag" data-i18n="work.tag.social5">Contenido Social</span>
-            <span class="tag" data-i18n="work.tag.carousels5">Carruseles</span>
-          </div>
-          <h3>Negocio Capital</h3>
-          <p data-i18n="work.nc5.desc">Diseño de carrusel con estilo cinéfilo y mensajes directos sobre negocios y mentalidad.</p>
-        </div>
-      </article>
-     <!-- CLAUDEEEE -->
-
+<!-- Header -->
+<header class="header">
+<a class="logo" href="#"><img alt="Máximo Piccoli" class="logo-img" src="assets/logo.png"/></a>
+<nav class="nav">
+<a class="nav-link" data-i18n="nav.work" href="#work">Trabajo</a>
+<a class="nav-link" data-i18n="nav.reels" href="#reels">Reels</a>
+<a class="nav-link" data-i18n="nav.videos" href="#videos">Videos</a>
+<a class="nav-link" data-i18n="nav.skills" href="#skills">Habilidades</a>
+<a class="nav-link" data-i18n="nav.about" href="#about">Sobre mí</a>
+<a class="nav-link" data-i18n="nav.contact" href="#contact">Contacto</a>
+<div class="lang-toggle">
+<button class="lang-btn active">ES</button>
+<button class="lang-btn">EN</button>
+</div>
+<a class="btn-primary-sm" data-i18n="nav.cta" href="https://wa.me/543436989310" target="_blank">Hablemos</a>
+</nav>
+<button aria-label="Menú" class="mobile-menu-btn">
+<i data-lucide="menu"></i>
+</button>
+</header>
+<!-- Hero -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<div class="badge">
+<span class="badge-dot"></span>
+<span data-i18n="hero.badge">Disponible para nuevos proyectos</span>
+</div>
+<h1 class="hero-title" data-i18n="hero.title" data-i18n-html="">Creador de Contenido<br/>&amp; Diseñador Visual</h1>
+<p class="hero-sub" data-i18n="hero.sub" data-i18n-html="">Edición de video, diseño de carruseles, branding e identidad visual<br/>para marcas que quieren destacar. Desde Argentina, trabajando globalmente.</p>
+<div class="hero-ctas">
+<a class="btn-primary" data-i18n="hero.cta" data-i18n-html="" href="#work">Ver Mi Trabajo <i data-lucide="arrow-down"></i></a>
+</div>
+</div>
+</section>
+<!-- Clients -->
+<section class="clients">
+<span class="clients-label" data-i18n="clients.label">MARCAS QUE CONFIARON EN MÍ DISEÑO</span>
+<div class="clients-row">
+<span>NEGOCIO CAPITAL</span>
+<span>RC DETAILING</span>
+<span>INFUMATE</span>
+<span>PAOLA BERMUDEZ</span>
+<span>PODMAKERS</span>
+<span>VOLKSWAGEN</span>
+<span>CLUSTER</span>
+<span>IDEALMANAGEMENT</span>
+<span>21 STUDIOS</span>
+<span>COACH BLUE</span>
+</div>
+</section>
+<!-- Work -->
+<section class="work" id="work">
+<div class="section-header">
+<div>
+<span class="section-label accent-indigo" data-i18n="work.label">TRABAJO SELECCIONADO</span>
+<h2 class="section-title" data-i18n="work.title">Proyectos Recientes</h2>
+</div>
+<a class="view-all" data-i18n="work.viewAll" data-i18n-html="" href="#">Ver Todos los Proyectos <i data-lucide="arrow-right"></i></a>
+</div>
+<div class="projects-grid">
+<article class="project-card">
+<div class="project-img">
+<img alt="Negocio Capital" loading="lazy" src="assets/negocio-capital.jpg"/>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag" data-i18n="work.tag.social">Contenido Social</span>
+<span class="tag" data-i18n="work.tag.carousels">Carruseles</span>
+</div>
+<h3>Negocio Capital</h3>
+<p data-i18n="work.nc.desc">Diseño de carruseles, clipping y contenido visual para marca personal de emprendimiento y negocios.</p>
+</div>
+</article>
+<article class="project-card">
+<div class="project-img">
+<img alt="RC Detailing" loading="lazy" src="assets/rc-detailing.jpg"/>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag">Branding</span>
+<span class="tag" data-i18n="work.tag.logo">Logo Design</span>
+</div>
+<h3>RC Detailing</h3>
+<p data-i18n="work.rc.desc">Identidad visual completa para lavadero automotriz: logo, tipografía y sistema de marca.</p>
+</div>
+</article>
+<article class="project-card">
+<div class="project-img">
+<img alt="Negocio Capital - Carrusel 2" loading="lazy" src="assets/niurkys-marcos.jpg"/>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag" data-i18n="work.tag.social3">Contenido Social</span>
+<span class="tag" data-i18n="work.tag.carousels2">Carruseles</span>
+</div>
+<h3>Negocio Capital</h3>
+<p data-i18n="work.nc2.desc">Carruseles motivacionales y de marca personal con diseño editorial para redes sociales.</p>
+</div>
+</article>
+<article class="project-card">
+<div class="project-img">
+<img alt="Negocio Capital - Carrusel 3" loading="lazy" src="assets/infumate.jpg"/>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag" data-i18n="work.tag.social2">Contenido Social</span>
+<span class="tag" data-i18n="work.tag.carousels3">Carruseles</span>
+</div>
+<h3>Negocio Capital</h3>
+<p data-i18n="work.nc3.desc">Diseño de carrusel con enfoque lifestyle y aspiracional para marca de emprendimiento.</p>
+</div>
+</article>
+<article class="project-card">
+<div class="project-img">
+<img alt="Negocio Capital - Carrusel 4" loading="lazy" src="assets/slide3.jpg"/>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag" data-i18n="work.tag.social4">Contenido Social</span>
+<span class="tag" data-i18n="work.tag.carousels4">Carruseles</span>
+</div>
+<h3>Negocio Capital</h3>
+<p data-i18n="work.nc4.desc">Carrusel con frases de impacto y estética cinematográfica para emprendedores.</p>
+</div>
+</article>
+<article class="project-card">
+<div class="project-img">
+<img alt="Negocio Capital - Carrusel 5" loading="lazy" src="assets/slide4.jpg"/>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag" data-i18n="work.tag.social5">Contenido Social</span>
+<span class="tag" data-i18n="work.tag.carousels5">Carruseles</span>
+</div>
+<h3>Negocio Capital</h3>
+<p data-i18n="work.nc5.desc">Diseño de carrusel con estilo cinéfilo y mensajes directos sobre negocios y mentalidad.</p>
+</div>
+</article>
+<!-- CLAUDEEEE -->
 <!-- NUEVO PROYECTO CON CARRUSEL 1 -->
-      <article class="project-card carousel-project-card" data-carousel='["assets/FOTO_1A.jpg","assets/FOTO_1B.jpg","assets/FOTO_1C.jpg", "assets/FOTO_1D.jpg"]'>
-        <div class="project-img carousel-wrapper">
-          <img src="assets/FOTO_1A.jpg" alt="Proyecto Carrusel 1" class="carousel-main-img" loading="lazy">
-          <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
-          <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
-          <div class="carousel-dots"></div>
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag">Contenido Social</span>
-            <span class="tag">Carrusel</span>
-            <span class="tag">CLICKEAR, CARRUSEL DESLIZABLE.</span>
-          </div>
-          <h3>Negocio Capital</h3>
-          <p>Carrusel rapido de última hora, de alto impacto visual. Con efectos de "Relight".</p>
-        </div>
-      </article>
+<article class="project-card carousel-project-card" data-carousel='["assets/FOTO_1A.jpg","assets/FOTO_1B.jpg","assets/FOTO_1C.jpg", "assets/FOTO_1D.jpg"]'>
+<div class="project-img carousel-wrapper">
+<img alt="Proyecto Carrusel 1" class="carousel-main-img" loading="lazy" src="assets/FOTO_1A.jpg"/>
+<button aria-label="Anterior" class="carousel-btn carousel-prev">‹</button>
+<button aria-label="Siguiente" class="carousel-btn carousel-next">›</button>
+<div class="carousel-dots"></div>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag">Contenido Social</span>
+<span class="tag">Carrusel</span>
+<span class="tag">CLICKEAR, CARRUSEL DESLIZABLE.</span>
+</div>
+<h3>Negocio Capital</h3>
+<p>Carrusel rapido de última hora, de alto impacto visual. Con efectos de "Relight".</p>
+</div>
+</article>
+<!-- NUEVO PROYECTO CON CARRUSEL 2 -->
+<article class="project-card carousel-project-card" data-carousel='["assets/FOTO_2A.jpg","assets/FOTO_2B.jpg","assets/FOTO_2C.jpg", "assets/FOTO_2D.jpg"]'>
+<div class="project-img carousel-wrapper">
+<img alt="Proyecto Carrusel 2" class="carousel-main-img" loading="lazy" src="assets/FOTO_2A.jpg"/>
+<button aria-label="Anterior" class="carousel-btn carousel-prev">‹</button>
+<button aria-label="Siguiente" class="carousel-btn carousel-next">›</button>
+<div class="carousel-dots"></div>
+</div>
+<div class="project-info">
+<div class="project-tags">
+<span class="tag">Branding</span>
+<span class="tag">Carrusel</span>
+<span class="tag">CLICKEAR, CARRUSEL DESLIZABLE.</span>
+</div>
+<h3>Coach Blue</h3>
+<p>Carrusel + Storie slides para el famoso Coach Blue, de alto impacto visual. Con efectos de "Relight".</p>
+</div>
+</article>
+<!-- CLAUDEEEE -->
+</div>
+</section>
+<!-- Reels -->
+<section class="reels" id="reels">
+<div class="section-header">
+<div>
+<span class="section-label accent-coral" data-i18n="reels.label">CONTENIDO EN VIDEO</span>
+<h2 class="section-title" data-i18n="reels.title">Reels &amp; Video Edits</h2>
+</div>
+<button class="btn-expand" id="reels-toggle">
+<i data-lucide="chevron-down"></i>
+<span data-i18n="reels.more">Ver Más Reels</span>
+</button>
+</div>
+<div class="reels-grid" id="reels-grid">
+<article class="reel-card">
+<div class="reel-embed" data-video-id="3OccDNmHNk8">
+<img alt="REEL MARCOS 1 MIAMI" class="reel-poster" src="assets/reel-1-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">YouTube</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Marcos</span>
+</div>
+<h3>REEL MARCOS 1 MIAMI</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/watch?v=3OccDNmHNk8" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- SLOT VACÍO - Posición 2: para tu mejor video nuevo -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="wqzQdTJdakQ">
+<img alt="13 MARCOS ABRIL2026" class="reel-poster" src="assets/reel-10-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Marcos - NC</span>
+</div>
+<h3>13 MARCOS ABRIL2026</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/wqzQdTJdakQ" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- SLOT NUEVO VACÍO - Posición 3: tu nuevo mejor video aquí -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="YvpnkjcxQhM">
+<img alt="ProCraft Restoration (Basic Real State)" class="reel-poster" src="assets/reel-9-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Procraf Restoration</span>
+</div>
+<h3>ProCraft Wilimington (Basic Real State)</h3>
 
-      <!-- NUEVO PROYECTO CON CARRUSEL 2 -->
-      <article class="project-card carousel-project-card" data-carousel='["assets/FOTO_2A.jpg","assets/FOTO_2B.jpg","assets/FOTO_2C.jpg", "assets/FOTO_2D.jpg"]'>
-        <div class="project-img carousel-wrapper">
-          <img src="assets/FOTO_2A.jpg" alt="Proyecto Carrusel 2" class="carousel-main-img" loading="lazy">
-          <button class="carousel-btn carousel-prev" aria-label="Anterior">&#8249;</button>
-          <button class="carousel-btn carousel-next" aria-label="Siguiente">&#8250;</button>
-          <div class="carousel-dots"></div>
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span class="tag">Branding</span>
-            <span class="tag">Carrusel</span>
-            <span class="tag">CLICKEAR, CARRUSEL DESLIZABLE.</span>
-          </div>
-          <h3>Coach Blue</h3>
-          <p>Carrusel + Storie slides para el famoso Coach Blue, de alto impacto visual. Con efectos de "Relight".</p>
-        </div>
-      </article>
-
-
-      <!-- CLAUDEEEE -->
-
-
-    </div>
-  </section>
-
-  <!-- Reels -->
-  <section class="reels" id="reels">
-    <div class="section-header">
-      <div>
-        <span class="section-label accent-coral" data-i18n="reels.label">CONTENIDO EN VIDEO</span>
-        <h2 class="section-title" data-i18n="reels.title">Reels & Video Edits</h2>
-      </div>
-      <button class="btn-expand" id="reels-toggle">
-        <i data-lucide="chevron-down"></i>
-        <span data-i18n="reels.more">Ver Más Reels</span>
-      </button>
-    </div>
-    <div class="reels-grid" id="reels-grid">
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="3OccDNmHNk8">
-          <img src="assets/reel-1-thumb.jpg" alt="REEL MARCOS 1 MIAMI" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">YouTube</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Marcos</span>
-          </div>
-          <h3>REEL MARCOS 1 MIAMI</h3>
-        </div>
-      </article>
-      <!-- SLOT VACÍO - Posición 2: para tu mejor video nuevo -->
-     <article class="reel-card">
-        <div class="reel-embed" data-video-id="wqzQdTJdakQ" data-short="true">
-          <img src="assets/reel-10-thumb.jpg" alt="13 MARCOS ABRIL2026" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Marcos - NC</span>
-          </div>
-          <h3>13 MARCOS ABRIL2026</h3>
-        </div>
-      </article>
-
-      <!-- SLOT NUEVO VACÍO - Posición 3: tu nuevo mejor video aquí -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="REEMPLAZAR_ID_AQUI" data-short="true">
-          <img src="assets/reel-9-thumb.jpg" alt="ProCraft Restoration (Basic Real State)" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Procraf Restoration</span>
-          </div>
-          <h3>ProCraft Wilimington (Basic Real State)</h3>
-        </div>
-      </article>
-
-      <!-- NIURKYS AD REELS ABRIL → sube a posición 3 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="-Pxcq09kurw" data-short="true">
-          <img src="assets/reel-6-thumb.jpg" alt="NIURKYS AD REELS ABRIL" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Niurkys</span>
-          </div>
-          <h3>NIURKYS AD REELS ABRIL</h3>
-        </div>
-      </article>
-
-      <!-- NIURKYS AD REELS ABR2026 → sube a posición 4 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="gpmgaby1fJY" data-short="true">
-          <img src="assets/reel-7-thumb.jpg" alt="TÍTULO REEL 7" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Marcos - NC</span>
-          </div>
-          <h3>NIURKYS AD REELS ABR2026</h3>
-        </div>
-      </article>
-
-      <!-- REEL VOLKSWAGEN TCROSS → posición 5 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="icZU261olqk" data-short="true">
-          <img src="assets/reel-5-thumb.jpg" alt="REEL VOLKSWAGEN TCROSS" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Volkswagen - Repanic</span>
-          </div>
-          <h3>REEL VOLKSWAGEN TCROSS</h3>
-        </div>
-      </article>
-
-      <!-- REEL 00 MAR2026 NIURKYS → baja a nueva fila (posición 6) -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="xdoatmj0dAo" data-short="true">
-          <img src="assets/reel-2-thumb.jpg" alt="REEL 00 MAR2026 NIURKYS" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Niurkys</span>
-          </div>
-          <h3>REEL 00 MAR2026 NIURKYS</h3>
-        </div>
-      </article>
-
-      <!-- NIURKYS CREDITO 4 BEST VERSION → posición 7 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="lJ9EX7L-e2Q" data-short="true">
-          <img src="assets/reel-3-thumb.jpg" alt="NIURKYS CREDITO 4 BEST VERSION" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Niurkys</span>
-          </div>
-          <h3>NIURKYS CREDITO 4 BEST VERSION</h3>
-        </div>
-      </article>
-
-      <!-- REEL 4 PAOLA bermudez → posición 8 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="jSIH-ij9uKM" data-short="true">
-          <img src="assets/reel-4-thumb.jpg" alt="REEL 4 PAOLA bermudez" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Paola Bermudez</span>
-          </div>
-          <h3>REEL 4 PAOLA bermudez</h3>
-        </div>
-      </article>
-
-      <!-- 29V2 CLIPPING MARCOS MAR26 → posición 9 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="dzrmKgI5Cwk" data-short="true">
-          <img src="assets/reel-8-thumb.jpg" alt="TÍTULO REEL 8" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Marcos - NC</span>
-          </div>
-          <h3>29V2 CLIPPING MARCOS MAR26</h3>
-        </div>
-      </article>
-
-      <!-- SLOT VACÍO 10 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="htTEu88YBto" data-short="true">
-          <img src="assets/reel-11-thumb.jpg" alt="IDEALMNG (Basic Motion)" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">Instagram</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Ideal MNG</span>
-          </div>
-          <h3>IDEALMNG (Basic Motion)</h3>
-        </div>
-      </article>
-
-      <!-- SLOT VACÍO 11 -->
-      <article class="reel-card">
-        <div class="reel-embed" data-video-id="ESkidry8448" data-short="true">
-          <img src="assets/reel-12-thumb.jpg" alt="NUEVO REEL" class="reel-poster">
-          <div class="reel-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="reel-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">YouTube</span>
-            <span class="meta-dot">·</span>
-            <span class="meta-client">Volkswagen - Repanic</span>
-          </div>
-          <h3>Nivus REEl AD venta</h3>
-        </div>
-      </article>
-
-     </div>
-  </section>
-
-
-  <!-- Videos -->
-  <section class="videos" id="videos">
-    <div class="section-header">
-      <div>
-        <span class="section-label accent-green" data-i18n="videos.label">PRODUCCIONES</span>
-        <h2 class="section-title" data-i18n="videos.title">Videos Completos</h2>
-      </div>
-    </div>
-    <div class="videos-grid">
-      <article class="video-card">
-        <div class="video-embed" data-video-id="8atxqhoMBoE">
-          <img src="assets/video-1-thumb.jpg" alt="Ivan sanchez FINAL CHEAP VSL" class="video-poster">
-          <div class="video-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="video-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">YouTube</span>
-          </div>
-          <h3>Ivan sanchez FINAL CHEAP VSL</h3>
-        </div>
-      </article>
-      <article class="video-card">
-        <div class="video-embed" data-video-id="TH0KmafgBNU">
-          <img src="assets/video-2-thumb.jpg" alt="VSL LANDER pt 3 EPICO" class="video-poster">
-          <div class="video-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="video-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">YouTube</span>
-          </div>
-          <h3>VSL LANDER pt 3 EPICO</h3>
-        </div>
-      </article>
-      <article class="video-card">
-        <div class="video-embed" data-video-id="ZJRkZSRCKpM">
-          <img src="assets/video-3-thumb.jpg" alt="YOUTUBE LARGE IVAN SANCHEZ 0 A 50K" class="video-poster">
-          <div class="video-overlay"></div>
-          <button class="play-btn" aria-label="Reproducir"><i data-lucide="play"></i></button>
-        </div>
-        <div class="video-info">
-          <div class="reel-meta">
-            <i data-lucide="youtube" class="meta-icon"></i>
-            <span class="meta-platform">YouTube</span>
-          </div>
-          <h3>YOUTUBE LARGE IVAN SANCHEZ 0 A 50K</h3>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <div class="skills-header">
-      <span class="section-label accent-indigo" data-i18n="skills.label">MIS SERVICIOS</span>
-      <h2 class="section-title" data-i18n="skills.title">Lo Que Puedo Hacer Por Vos</h2>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-icon icon-indigo"><i data-lucide="video"></i></div>
-        <h3 data-i18n="skills.editing.title">Edición de Video</h3>
-        <p data-i18n="skills.editing.desc">Reels, clipping, ads y contenido audiovisual para redes sociales. Edición dinámica que captura la atención y genera engagement.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-green"><i data-lucide="layout-grid"></i></div>
-        <h3 data-i18n="skills.carousels.title">Diseño de Carruseles</h3>
-        <p data-i18n="skills.carousels.desc">Carruseles impactantes para Instagram y redes. Diseño visual que comunica tu mensaje de forma clara y atractiva.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-coral"><i data-lucide="pen-tool"></i></div>
-        <h3 data-i18n="skills.branding.title">Branding & Identidad</h3>
-        <p data-i18n="skills.branding.desc">Logos, sistemas de marca e identidad visual completa. Diseño que refleja la esencia de tu negocio y te diferencia.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="assets/imagen-max.jpg" alt="Máximo Piccoli">
-    </div>
-    <div class="about-content">
-      <span class="section-label accent-indigo" data-i18n="about.label">SOBRE MÍ</span>
-      <h2 class="section-title" data-i18n="about.title" data-i18n-html>Apasionado por<br>el contenido visual</h2>
-      <div class="about-text">
-        <p data-i18n="about.p1">Soy creador de contenido y diseñador visual especializado en edición de video, diseño de carruseles para redes sociales, branding e identidad visual.</p>
-        <p data-i18n="about.p2">Trabajo con marcas personales, emprendedores y empresas que buscan comunicar su mensaje de forma impactante. Cada proyecto es una oportunidad para contar una historia que conecte con la audiencia.</p>
-      </div>
-      <div class="stats">
-        <div class="stat">
-          <span class="stat-number">10+</span>
-          <span class="stat-label" data-i18n="about.stat1">Años de Experiencia</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">1.3k+</span>
-          <span class="stat-label" data-i18n="about.stat2">Proyectos Completados</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">93%+</span>
-          <span class="stat-label" data-i18n="about.stat3">Clientes Satisfechos</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta" id="contact">
-    <h2 data-i18n="cta.title" data-i18n-html>Construyamos<br>Algo Grandioso</h2>
-    <p data-i18n="cta.sub" data-i18n-html>¿Tenés un proyecto en mente? Me encantaría escucharlo.<br>Creemos algo extraordinario juntos.</p>
-    <div class="cta-buttons">
-      <a href="https://wa.me/543436989310" target="_blank" class="btn-gradient" data-i18n="cta.btn" data-i18n-html>Iniciar Proyecto <i data-lucide="arrow-right"></i></a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-top">
-      <span class="logo"><img src="assets/logo.png" alt="Máximo Piccoli" class="logo-img"></span>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/horus.creatives" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-      </div>
-    </div>
-    <div class="footer-divider"></div>
-    <div class="footer-bottom">
-      <span data-i18n="footer.copy">© 2026 Máximo Piccoli. Todos los derechos reservados.</span>
-    </div>
-  </footer>
-
-  <!-- Scroll to top -->
-  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba">
-    <i data-lucide="arrow-up"></i>
-  </button>
-
-  <script>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/YvpnkjcxQhM" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- NIURKYS AD REELS ABRIL → sube a posición 3 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="-Pxcq09kurw">
+<img alt="NIURKYS AD REELS ABRIL" class="reel-poster" src="assets/reel-6-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Niurkys</span>
+</div>
+<h3>NIURKYS AD REELS ABRIL</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/-Pxcq09kurw" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- NIURKYS AD REELS ABR2026 → sube a posición 4 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="gpmgaby1fJY">
+<img alt="TÍTULO REEL 7" class="reel-poster" src="assets/reel-7-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Marcos - NC</span>
+</div>
+<h3>NIURKYS AD REELS ABR2026</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/gpmgaby1fJY" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- REEL VOLKSWAGEN TCROSS → posición 5 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="icZU261olqk">
+<img alt="REEL VOLKSWAGEN TCROSS" class="reel-poster" src="assets/reel-5-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Volkswagen - Repanic</span>
+</div>
+<h3>REEL VOLKSWAGEN TCROSS</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/icZU261olqk" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- REEL 00 MAR2026 NIURKYS → baja a nueva fila (posición 6) -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="xdoatmj0dAo">
+<img alt="REEL 00 MAR2026 NIURKYS" class="reel-poster" src="assets/reel-2-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Niurkys</span>
+</div>
+<h3>REEL 00 MAR2026 NIURKYS</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/xdoatmj0dAo" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- NIURKYS CREDITO 4 BEST VERSION → posición 7 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="lJ9EX7L-e2Q">
+<img alt="NIURKYS CREDITO 4 BEST VERSION" class="reel-poster" src="assets/reel-3-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Niurkys</span>
+</div>
+<h3>NIURKYS CREDITO 4 BEST VERSION</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/lJ9EX7L-e2Q" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- REEL 4 PAOLA bermudez → posición 8 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="jSIH-ij9uKM">
+<img alt="REEL 4 PAOLA bermudez" class="reel-poster" src="assets/reel-4-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Paola Bermudez</span>
+</div>
+<h3>REEL 4 PAOLA bermudez</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/jSIH-ij9uKM" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- 29V2 CLIPPING MARCOS MAR26 → posición 9 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="dzrmKgI5Cwk">
+<img alt="TÍTULO REEL 8" class="reel-poster" src="assets/reel-8-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Marcos - NC</span>
+</div>
+<h3>29V2 CLIPPING MARCOS MAR26</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/dzrmKgI5Cwk" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- SLOT VACÍO 10 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="htTEu88YBto">
+<img alt="IDEALMNG (Basic Motion)" class="reel-poster" src="assets/reel-11-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">Instagram</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Ideal MNG</span>
+</div>
+<h3>IDEALMNG (Basic Motion)</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/htTEu88YBto" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+<!-- SLOT VACÍO 11 -->
+<article class="reel-card">
+<div class="reel-embed" data-short="true" data-video-id="ESkidry8448">
+<img alt="NUEVO REEL" class="reel-poster" src="assets/reel-12-thumb.jpg"/>
+<div class="reel-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="reel-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">YouTube</span>
+<span class="meta-dot">·</span>
+<span class="meta-client">Volkswagen - Repanic</span>
+</div>
+<h3>Nivus REEl AD venta</h3>
+<a class="yt-fallback-link" href="https://www.youtube.com/shorts/ESkidry8448" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"></path></svg>
+<span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+</span>
+</a></div>
+</article>
+</div>
+</section>
+<!-- Videos -->
+<section class="videos" id="videos">
+<div class="section-header">
+<div>
+<span class="section-label accent-green" data-i18n="videos.label">PRODUCCIONES</span>
+<h2 class="section-title" data-i18n="videos.title">Videos Completos</h2>
+</div>
+</div>
+<div class="videos-grid">
+<article class="video-card">
+<div class="video-embed" data-video-id="8atxqhoMBoE">
+<img alt="Ivan sanchez FINAL CHEAP VSL" class="video-poster" src="assets/video-1-thumb.jpg"/>
+<div class="video-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="video-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">YouTube</span>
+</div>
+<h3>Ivan sanchez FINAL CHEAP VSL</h3>
+</div>
+</article>
+<article class="video-card">
+<div class="video-embed" data-video-id="TH0KmafgBNU">
+<img alt="VSL LANDER pt 3 EPICO" class="video-poster" src="assets/video-2-thumb.jpg"/>
+<div class="video-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="video-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">YouTube</span>
+</div>
+<h3>VSL LANDER pt 3 EPICO</h3>
+</div>
+</article>
+<article class="video-card">
+<div class="video-embed" data-video-id="ZJRkZSRCKpM">
+<img alt="YOUTUBE LARGE IVAN SANCHEZ 0 A 50K" class="video-poster" src="assets/video-3-thumb.jpg"/>
+<div class="video-overlay"></div>
+<button aria-label="Reproducir" class="play-btn"><i data-lucide="play"></i></button>
+</div>
+<div class="video-info">
+<div class="reel-meta">
+<i class="meta-icon" data-lucide="youtube"></i>
+<span class="meta-platform">YouTube</span>
+</div>
+<h3>YOUTUBE LARGE IVAN SANCHEZ 0 A 50K</h3>
+</div>
+</article>
+</div>
+</section>
+<!-- Skills -->
+<section class="skills" id="skills">
+<div class="skills-header">
+<span class="section-label accent-indigo" data-i18n="skills.label">MIS SERVICIOS</span>
+<h2 class="section-title" data-i18n="skills.title">Lo Que Puedo Hacer Por Vos</h2>
+</div>
+<div class="skills-grid">
+<div class="skill-card">
+<div class="skill-icon icon-indigo"><i data-lucide="video"></i></div>
+<h3 data-i18n="skills.editing.title">Edición de Video</h3>
+<p data-i18n="skills.editing.desc">Reels, clipping, ads y contenido audiovisual para redes sociales. Edición dinámica que captura la atención y genera engagement.</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon icon-green"><i data-lucide="layout-grid"></i></div>
+<h3 data-i18n="skills.carousels.title">Diseño de Carruseles</h3>
+<p data-i18n="skills.carousels.desc">Carruseles impactantes para Instagram y redes. Diseño visual que comunica tu mensaje de forma clara y atractiva.</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon icon-coral"><i data-lucide="pen-tool"></i></div>
+<h3 data-i18n="skills.branding.title">Branding &amp; Identidad</h3>
+<p data-i18n="skills.branding.desc">Logos, sistemas de marca e identidad visual completa. Diseño que refleja la esencia de tu negocio y te diferencia.</p>
+</div>
+</div>
+</section>
+<!-- About -->
+<section class="about" id="about">
+<div class="about-img">
+<img alt="Máximo Piccoli" src="assets/imagen-max.jpg"/>
+</div>
+<div class="about-content">
+<span class="section-label accent-indigo" data-i18n="about.label">SOBRE MÍ</span>
+<h2 class="section-title" data-i18n="about.title" data-i18n-html="">Apasionado por<br/>el contenido visual</h2>
+<div class="about-text">
+<p data-i18n="about.p1">Soy creador de contenido y diseñador visual especializado en edición de video, diseño de carruseles para redes sociales, branding e identidad visual.</p>
+<p data-i18n="about.p2">Trabajo con marcas personales, emprendedores y empresas que buscan comunicar su mensaje de forma impactante. Cada proyecto es una oportunidad para contar una historia que conecte con la audiencia.</p>
+</div>
+<div class="stats">
+<div class="stat">
+<span class="stat-number">10+</span>
+<span class="stat-label" data-i18n="about.stat1">Años de Experiencia</span>
+</div>
+<div class="stat">
+<span class="stat-number">1.3k+</span>
+<span class="stat-label" data-i18n="about.stat2">Proyectos Completados</span>
+</div>
+<div class="stat">
+<span class="stat-number">93%+</span>
+<span class="stat-label" data-i18n="about.stat3">Clientes Satisfechos</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta" id="contact">
+<h2 data-i18n="cta.title" data-i18n-html="">Construyamos<br/>Algo Grandioso</h2>
+<p data-i18n="cta.sub" data-i18n-html="">¿Tenés un proyecto en mente? Me encantaría escucharlo.<br/>Creemos algo extraordinario juntos.</p>
+<div class="cta-buttons">
+<a class="btn-gradient" data-i18n="cta.btn" data-i18n-html="" href="https://wa.me/543436989310" target="_blank">Iniciar Proyecto <i data-lucide="arrow-right"></i></a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-top">
+<span class="logo"><img alt="Máximo Piccoli" class="logo-img" src="assets/logo.png"/></span>
+<div class="social-icons">
+<a aria-label="Instagram" href="https://www.instagram.com/horus.creatives" target="_blank"><i data-lucide="instagram"></i></a>
+</div>
+</div>
+<div class="footer-divider"></div>
+<div class="footer-bottom">
+<span data-i18n="footer.copy">© 2026 Máximo Piccoli. Todos los derechos reservados.</span>
+</div>
+</footer>
+<!-- Scroll to top -->
+<button aria-label="Volver arriba" class="scroll-top" id="scroll-top">
+<i data-lucide="arrow-up"></i>
+</button>
+<script>
     lucide.createIcons();
 
     // ===== i18n =====
@@ -777,6 +821,30 @@
         embed.classList.add('playing');
         embed.appendChild(iframe);
       });
+    });
+
+    // Botón "Ver en YouTube" — solo para video-cards (los reel-cards ya lo tienen en el HTML)
+    document.querySelectorAll('.video-embed[data-video-id]').forEach(embed => {
+      const videoId = embed.dataset.videoId;
+      if (!videoId || videoId === 'REEMPLAZAR_ID' || videoId === 'REEMPLAZAR_ID_AQUI') return;
+      const isShort = embed.dataset.short === 'true';
+      const ytUrl = isShort
+        ? `https://www.youtube.com/shorts/${videoId}`
+        : `https://www.youtube.com/watch?v=${videoId}`;
+      const infoEl = embed.closest('.video-card')?.querySelector('.video-info');
+      if (!infoEl) return;
+      const link = document.createElement('a');
+      link.href = ytUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.className = 'yt-fallback-link';
+      link.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        <span>
+          ¿No carga el video? → Miralo en YouTube
+          <span class="yt-fallback-label">Abre en una nueva pestaña · funciona en cualquier dispositivo</span>
+        </span>`;
+      infoEl.appendChild(link);
     });
 
     // Smooth scroll

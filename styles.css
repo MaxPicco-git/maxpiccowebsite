@@ -568,6 +568,43 @@ img {
   letter-spacing: -0.3px;
 }
 
+.yt-fallback-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 4px;
+  padding: 8px 14px;
+  background: #FF0000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  border-radius: 6px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.2s, transform 0.15s;
+}
+.yt-fallback-link:hover {
+  background: #cc0000;
+  transform: translateY(-1px);
+}
+.yt-fallback-link svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.yt-fallback-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.75);
+  margin-top: 1px;
+  letter-spacing: 0;
+}
+.video-info .yt-fallback-link {
+  margin-top: 6px;
+}
+
 
 /* ===== Videos ===== */
 .videos {

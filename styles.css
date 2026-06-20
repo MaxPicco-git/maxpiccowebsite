@@ -437,12 +437,14 @@ img {
 }
 
 .reels-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .reel-card {
+  flex: 0 0 calc(25% - 18px);
   background: #0B0B0E;
   border-radius: 16px;
   overflow: hidden;
@@ -612,13 +614,14 @@ img {
 }
 
 .videos-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
 .video-card {
+  flex: 0 0 calc(33.333% - 16px);
   background: #16161A;
   border-radius: 16px;
   overflow: hidden;
@@ -1009,8 +1012,8 @@ img {
   .section-title { font-size: 36px; }
   .cta h2 { font-size: 48px; }
   .projects-grid { grid-template-columns: 1fr; }
-  .reels-grid { grid-template-columns: 1fr 1fr; }
-  .videos-grid { grid-template-columns: 1fr 1fr; }
+  .reel-card { flex-basis: calc(50% - 12px); }
+  .video-card { flex-basis: calc(50% - 12px); }
   .video-embed { height: 240px; }
   .clients { padding: 40px; }
 }
@@ -1049,7 +1052,8 @@ img {
   .clients-row { gap: 24px; }
   .clients-row span { font-size: 13px; }
 
-  .projects-grid, .skills-grid, .reels-grid, .videos-grid { grid-template-columns: 1fr; }
+  .projects-grid, .skills-grid { grid-template-columns: 1fr; }
+  .reel-card, .video-card { flex-basis: 100%; }
   .project-img { height: 360px; }
 
   .stats { gap: 24px; }
